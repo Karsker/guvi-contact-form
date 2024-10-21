@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Contact Us | GUVI</title>
+</head>
+<body class="font-montserrat">
+    <div id="app-container" class="w-screen flex flex-col items-center">
+        <div id="form-container" class="w-[40rem] m-5 p-5 rounded-lg shadow-2xl shadow-stone-400">
+            <h1 class="text-3xl font-bold my-4">
+                Say <span class="text-green-600"> Hello !</span>
+            </h1>
+            <h3 class="font-medium">
+                Feel free to stop by and say hi !
+            </h3>
+            <!-- Form  -->
+             <form id="contact-form" class="my-4 flex flex-col gap-2">
+                <div class="flex flex-col gap-2">
+                    <label for="name" class="font-medium">Name</label>
+                    <input type="text" name="name" class="w-full px-3 py-2 rounded-md border border-stone-300 outline-green-600" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="email" class="font-medium">E-mail id</label>
+                    <input type="email" name="email" class="w-full px-3 py-2 rounded-md border border-stone-300 outline-green-600" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="phone" class="font-medium">Contact Number</label>
+                    <input type="text" name="phone" class="w-full px-3 py-2 rounded-md border border-stone-300 outline-green-600" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="subject" class="font-medium">Subject</label>
+                    <input type="text" name="subject" class="w-full px-3 py-2 rounded-md border border-stone-300 outline-green-600" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="message" class="font-medium">Message</label>
+                    <textarea name="message" class="w-full px-3 py-2 rounded-md border border-stone-300 outline-green-600 resize-none" rows="5" required></textarea>
+                </div>
+                <button class="w-full bg-green-600 text-white p-3 rounded-md font-semibold">Send</button>
+             </form>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
